@@ -28,7 +28,11 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 ALLOWED_HOSTS = ['*']
+
+
+
 
 
 # Application definition
@@ -188,6 +192,8 @@ EMAIL_USE_SSL = False   # Установите True, если используе
 DEFAULT_FROM_EMAIL = 'usmanmamatkulov36@gmail.com'
 
 
+
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 
 

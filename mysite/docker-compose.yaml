@@ -9,6 +9,7 @@ services:
     volumes:
       - .:/app
       - static_volume:/app/static
+      - /home/ubuntu/Travel2/mysite/static/:/app/static
       - media_volume:/app/media
     ports:
       - "8000:8000"
@@ -31,6 +32,7 @@ services:
       - "80:80"
     volumes:
       - static_volume:/app/static
+      - /home/ubuntu/Travel2/mysite/static/:/app/static
       - media_volume:/app/media
     depends_on:
       - web
